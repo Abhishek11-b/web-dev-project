@@ -15,52 +15,7 @@ Report” by summarizing today’s completed habits and time tracked (using data
 localStorage). Overall, this is a PHP/MySQL CRUD application with a modern front end.
 Key features described in the code and documentation include: secure login
 authentication, data visualization via progress bars.
-Key Technologies Used
-• PHP (server-side scripting) – The backend is written in PHP. All pages are PHP
-files (index.php, home.php, and endpoint scripts for add/update/delete). PHP
-handles form submissions and database interactions. (As noted, PHP is a widelyused server-side scripting language for creating dynamic web pages.)
-• MySQL (database) – A MySQL (MariaDB) database habit_tracker_db stores
-habit records in a tbl_tracker table. Each record has fields for date, day, and several
-habit flags. The PHP code uses PDO to connect to MySQL (include
-('../conn/conn.php')) and execute prepared statements for inserting, updating, and
-deleting records. MySQL is a relational database system suited for storing
-structured data like these habit logs.
-• XAMPP – The app is designed to run on a local PHP/MySQL server environment
-(e.g. XAMPP or similar). Indeed, the documentation advises “Install XAMPP” to
-get Apache, PHP and MySQL on your machine. Once set up, the source code is
-placed in htdocs, and the provided SQL is imported into phpMyAdmin.
-• Bootstrap CSS – The front end uses Bootstrap 4 for responsive, styled
-components. Layout classes (e.g. row, col-7, btn btn-dark, etc.) and Bootstrap’s
-progress bar classes (.progress, .progress-bar) are used extensively. (Bootstrap is a
-popular front-end framework providing prebuilt styling and grids.) For example,
-each habit entry’s completion percentage is shown using <div
-class="progress"><div class="progress-bar" ...></div></div>. This conveys
-progress visually – Bootstrap’s progress bars “show a user how far along he/she is
-in a process”.
-• jQuery and DataTables – The app includes jQuery and the DataTables plugin.
-jQuery simplifies client-side scripting, while DataTables enhances HTML tables
-with features like sorting, pagination, and instant search. In the code, the habit table
-has class .habit-table, and $('.habit-table').DataTable() initializes it. DataTables is
-described as “a JavaScript HTML table enhancing library” that adds advanced
-features (pagination, instant search, multi-column sorting) to a table. This makes
-the table interactive and easier to navigate.
-• Font Awesome – Font Awesome is loaded via CDN to provide icons (e.g. the
-pencil and trash icons on the Update/Delete buttons). Font Awesome is an “icon
-toolkit” that gives scalable vector icons for the UI.
-• HTML, CSS, JavaScript – Standard web technologies are used throughout.
-There’s custom CSS for fonts and layout (e.g. Google Fonts, background images),
-and custom JavaScript for UI behavior (dark mode toggle, chatbot, modal
-population, report generation). For example, a “dark-mode” CSS class is toggled on
-the <body> to switch themes when the user clicks the moon button. The code also
-uses localStorage in JavaScript to save focus sessions and mood logs on the client
-side, which is a browser feature for persisting data.
-• PHP Data Objects (PDO) – The PHP scripts use PDO to connect securely to the
-database with prepared statements (e.g. $stmt = $conn->prepare("INSERT INTO
-tbl_tracker ...")). PDO helps prevent SQL injection by parameterizing queries.
-The combination of PHP/MySQL on the backend and Bootstrap/jQuery/DataTables on
-the frontend is typical for this kind of web app. Indeed, the project description explicitly
-lists “PHP, MySQL, Bootstrap, jQuery, DataTables, Font Awesome” as the technology
-stack.
+
 Code Structure and Features
 🔑 Login System
 • You open the app and see a login page.

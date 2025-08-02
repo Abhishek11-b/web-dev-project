@@ -14,7 +14,8 @@ chatbot-like panel. The app also includes buttons to generate or download a “F
 Report” by summarizing today’s completed habits and time tracked (using data stored in
 localStorage). Overall, this is a PHP/MySQL CRUD application with a modern front end.
 Key features described in the code and documentation include: secure login
-authentication, data visualization via progress bars.\\
+authentication, data visualization via progress bars.
+
 
 Code Structure and Features
 
